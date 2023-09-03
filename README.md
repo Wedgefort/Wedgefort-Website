@@ -1,5 +1,5 @@
 # Wedgefort-Website
  The official Website for https://wedgefort.com
 ---
-## Deployment from MAC
-- Started the process of Code Deployment from MACs
+## Deployment to Cloud
+- Started the process of Code Deployment from on a Cloud Environment that can be worked from any Operating System
