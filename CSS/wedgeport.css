@@ -12,74 +12,69 @@ body{
 main{
   margin: 0 auto;
 }
-
+/* Navigation Bar-Frame */
 div.fix{
-  margin: 0 auto;
+  margin: 0;
   border: 0;
-  padding: 6px;
+  padding: 1vw;
 
   position: fixed;
   width: 100%;
-
+  
   font-family: 'Press Start 2P', 'Cursive';
   font-size: 1vw;
   background-color: #0b3954;
 }
+  /* Left Navigation Panel */
+  div.navlog{
+    margin: 0;
+    border: 0;
+    padding: 0;
 
-nav.nav{
-  margin: 0 auto;
-  border: 0;
-  padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+    /* Wedgefort Navigation Bar Logo */
+    img.navlog{
+      margin: 0 2vw;
+      border: 0;
+      padding: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      max-width: 2.4vw;
 
-div.navlog{
-  margin: 0;
-  border: 0;
-  padding: 0;
+      overflow: clip;
+    }
+    /* Wedgefort Letter Logo Navigation Bar Font */
+    nav.nav{
+      margin: 0 auto;
+      border: 0;
+      padding: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  /* Right Navigation Panel */
+  ul.nav{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: end;
+  }
+    /* About Us, Organizations Lists */
+    li{
+      margin: 0 2vw;
+      border: 0;
+      padding: 0;
 
-img.navlog{
-  margin: 0 auto;
-  border: 0;
-  padding: 0;
+      list-style: none;
+    }
 
-  max-width: 18px;
-
-  overflow: clip;
-}
-
-ul.nav{
-  margin: 0;
-  border: 0;
-  padding: 0;
-  
-  display: flex;
-  justify-content: end;
-}
-
-a{
-  margin: 0 6vw;
-}
-
-li{
-  margin: 0 6vw;
-  border: 0;
-  padding: 0;
-}
-
+/* Link Caches */
 a:link, a:visited, a:hover, a:active{
   text-decoration: none;
   color: #ffdead;
-}
-
-li{
-  list-style: none;
 }
