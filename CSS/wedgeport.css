@@ -3,16 +3,83 @@ html{
   color: #0b3954;
 }
 
-/* body{
-  background-color: #ffdead;
-  color: #0b3954;
-} */
-
-div.navbar{
-  font-family: 'Press Start 2P', cursive;
+body{
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
 }
 
-a.navbar:link, a.navbar:hover, a.navbar:active, a.navbar:visited{
+main{
+  margin: 0 auto;
+}
+
+div.fix{
+  margin: 0 auto;
+  border: 0;
+  padding: 6px;
+
+  position: fixed;
+  width: 100%;
+
+  font-family: 'Press Start 2P', 'Cursive';
+  font-size: 1vw;
+  background-color: #0b3954;
+}
+
+nav.nav{
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.navlog{
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+img.navlog{
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+
+  max-width: 18px;
+
+  overflow: clip;
+}
+
+ul.nav{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  
+  display: flex;
+  justify-content: end;
+}
+
+a{
+  margin: 0 6vw;
+}
+
+li{
+  margin: 0 6vw;
+  border: 0;
+  padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active{
   text-decoration: none;
-  color: #0b3954;
+  color: #ffdead;
+}
+
+li{
+  list-style: none;
 }
