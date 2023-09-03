@@ -73,8 +73,22 @@ div.fix{
       list-style: none;
     }
 
-/* Link Caches */
-a:link, a:visited, a:hover, a:active{
-  text-decoration: none;
-  color: #ffdead;
+  /* Link Caches */
+  a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #ffdead;
+  }
+
+header{
+  text-align: center;
 }
+  /* Imaginary Bounding Box */
+  header section.hedsect{
+    margin: 0 auto;
+    border: 0;
+    padding: 12vw;
+  }
+    /* Image Adjustment */
+    header section.hedsect img{
+      max-width: 30vw;
+    }
