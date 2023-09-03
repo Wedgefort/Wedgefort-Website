@@ -1,0 +1,18 @@
+html{
+  background-color: #ffdead;
+  color: #0b3954;
+}
+
+/* body{
+  background-color: #ffdead;
+  color: #0b3954;
+} */
+
+div.navbar{
+  font-family: 'Press Start 2P', cursive;
+}
+
+a.navbar:link, a.navbar:hover, a.navbar:active, a.navbar:visited{
+  text-decoration: none;
+  color: #0b3954;
+}
