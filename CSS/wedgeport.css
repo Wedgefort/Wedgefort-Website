@@ -1,6 +1,7 @@
 html{
-  background-color: #333333;
+  background-color: #383838;
   color: #cfcfcf;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
 }
 
 body{
@@ -15,14 +16,15 @@ main{
 /* Navigation Bar-Frame */
 div.fix{
   margin: 0;
-  border: 0;
-  padding: 1vw;
-
+  border: 1vw solid #414141;
+  padding: 0.6vw;
+  
   position: fixed;
   width: 100%;
   
-  font-family: 'Press Start 2P', 'Cursive';
-  font-size: 1vw;
+  border-style: none;
+  
+  font-size: 1.2vw;
   background-color: #414141;
 }
   /* Left Navigation Panel */
@@ -30,27 +32,27 @@ div.fix{
     margin: 0;
     border: 0;
     padding: 0;
-
+    
     display: flex;
     align-items: center;
     justify-content: left;
   }
     /* Wedgefort Navigation Bar Logo */
     img.navlog{
-      margin: 0 2vw;
+      margin: 0;
       border: 0;
-      padding: 0;
-
+      padding: 0 0.6vw 0 2vw;
+      
       max-width: 2.4vw;
-
+      
       overflow: clip;
     }
-    /* Wedgefort Letter Logo Navigation Bar Font */
+    /* Wedgefort Letter Logo */
     nav.nav{
       margin: 0 auto;
       border: 0;
       padding: 0;
-
+      
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -59,7 +61,7 @@ div.fix{
   ul.nav{
     margin: 0;
     border: 0;
-    padding: 0;
+    padding: 0 2vw 0 0;
     
     display: flex;
     justify-content: end;
@@ -69,9 +71,42 @@ div.fix{
       margin: 0 2vw;
       border: 0;
       padding: 0;
-
+      
       list-style: none;
+      align-items: center;
     }
+  /* Organization Button Edit */
+  div.dropdown-button{
+    position: relative;
+    display: block;
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  div.dropdown-button a:visited{
+
+  }
+  div.dropdown-button:hover{
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  div.org-dropdown{
+    display: none;
+    position: absolute;
+
+    margin: 0;
+    border: 0;
+    padding: 1vw;
+    
+    max-width: 1vw;
+  }
+  div.dropdown-button:hover div.org-dropdown{
+    position: absolute;
+    display: block;
+  }
+
 
   /* Link Caches */
   a:link, a:visited, a:hover, a:active{
@@ -83,12 +118,21 @@ header{
   text-align: center;
 }
   /* Imaginary Bounding Box */
-  header section.hedsect{
+  header section.wefo-logo{
     margin: 0 auto;
     border: 0;
-    padding: 12vw;
+    padding: 6vw 0 0;
   }
     /* Image Adjustment */
-    header section.hedsect img{
+    header section.wefo-logo img{
       max-width: 30vw;
     }
+  /* WEDGEFORT INDUSTRIES TITLE */
+  header section.header-wefo h1.wefo{
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    font-size: 3vw;
+  }
