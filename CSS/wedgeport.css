@@ -71,25 +71,23 @@ div.fix
 				div.org
 					{
 						padding: 0 2vw;
-						max-width: 100%;
 					}
 					div.org-drpdwn
 						{
-							display: none;
+							/* display: none; */
+							position: absolute;
 
 							background-color: #414141;
-							padding: 1vw 0;
+							/* Added negative margin to compensate div.org padding */
+							margin: 0 0 0 -1vw;
+							padding: 1vw;
 						}
+						div.org-drpdwn a
+							{
+								max-width: 100%;
+							}
 							div.comp1, div.comp2, div.comp3
 								{
 									padding: 1vw 0;
 								}
 						/* HOVERED WHEN */
-						/* div.org:hover div.org-drpdwn
-							{
-								display: block;
-								position: absolute;
-								max-width: 100%;
-							} */
-
-							/* WORK IN HOVER TOMORROW */
