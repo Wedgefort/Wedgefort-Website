@@ -1,6 +1,6 @@
 html{
-  background-color: #ffdead;
-  color: #0b3954;
+  background-color: #333333;
+  color: #cfcfcf;
 }
 
 body{
@@ -23,7 +23,7 @@ div.fix{
   
   font-family: 'Press Start 2P', 'Cursive';
   font-size: 1vw;
-  background-color: #0b3954;
+  background-color: #414141;
 }
   /* Left Navigation Panel */
   div.navlog{
@@ -76,7 +76,7 @@ div.fix{
   /* Link Caches */
   a:link, a:visited, a:hover, a:active{
     text-decoration: none;
-    color: #ffdead;
+    color: #cfcfcf;
   }
 
 header{
