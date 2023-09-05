@@ -25,14 +25,16 @@ div.fix
 	{
 		position: fixed;
 		background-color: #414141;
-
+		
 		font-size: 1.2vw;
-
+		
 		width: 100%;
-
+		
 		margin: 0;
 		border: 0;
 		padding: 0;
+
+		box-shadow: 3px 3px 24px 6px #333333;
 	}
 	nav.nav
 		{
@@ -70,17 +72,21 @@ div.fix
 				}
 				div.org
 					{
+						position: relative;
+						display: inline-block;
 						padding: 0 2vw;
 					}
 					div.org-drpdwn
 						{
-							/* display: none; */
+							display: none;
 							position: absolute;
 
 							background-color: #414141;
 							/* Added negative margin to compensate div.org padding */
 							margin: 0 0 0 -1vw;
 							padding: 1vw;
+
+							width: 15vw;
 						}
 						div.org-drpdwn a
 							{
@@ -91,3 +97,32 @@ div.fix
 									padding: 1vw 0;
 								}
 						/* HOVERED WHEN */
+						div.org:hover div.org-drpdwn
+								{
+									display: block;
+								}
+	
+	header section
+		{
+			margin: 0 auto;
+			border: 0;
+			padding: 0;
+
+			text-align: center;
+		}
+		header section.wefo-logo
+			{
+				padding: 6vw 0 0;
+			}
+			header section.wefo-logo img
+				{
+					max-width: 30vw;
+				}
+		header section.header-wefo
+			{
+				font-size: 2vw;
+			}
+			header section.header-wefo h1
+				{
+					margin: 0;
+				}
