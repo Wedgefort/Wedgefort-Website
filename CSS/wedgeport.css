@@ -34,8 +34,14 @@ div.fix
 		border: 0;
 		padding: 0;
 
-		box-shadow: 3px 3px 24px 6px #333333;
+/* Shadow Animation Start */
+		transition: box-shadow, 0.6s;
 	}
+/* Shadow Animation End */
+div.fix:hover
+{
+	box-shadow: 3px 3px 24px 6px #333333;
+}
 	nav.nav
 		{
 			display: flex;
