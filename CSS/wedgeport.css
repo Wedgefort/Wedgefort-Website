@@ -1,27 +1,27 @@
 /* PRIMARY BODY */
 html
-	{
-		font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
-		background-color: #383838;
-		color: #cfcfcf;
-	}
+{
+	font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+	background-color: #383838;
+	color: #cfcfcf;
+}
 
 /* LINKS GENERALIZATION */
 a:link, a:visited, a:hover, a:active
-	{
-	text-decoration: none;
-	color: #cfcfcf;
-	}
+{
+text-decoration: none;
+color: #cfcfcf;
+}
 
 body
-	{
-		margin: 0 auto;
-		border: 0;
-		padding: 0;
-	}
+{
+	margin: 0 auto;
+	border: 0;
+	padding: 0;
+}
 
 /* NAVIGATION BAR EDITS */
-div.fix
+	div.fix
 	{
 		position: fixed;
 		background-color: #414141;
@@ -34,35 +34,35 @@ div.fix
 		border: 0;
 		padding: 0;
 
-/* Shadow Animation Start */
+	/* Shadow Animation Start */
 		transition: box-shadow, 0.6s;
 	}
-/* Shadow Animation End */
-div.fix:hover
-{
-	box-shadow: 3px 3px 24px 6px #333333;
-}
-	nav.nav
+	/* Shadow Animation End */
+	div.fix:hover
+	{
+		box-shadow: 0 0.3vw .3vw 0.3vw #333333;
+	}
+		nav.nav
 		{
 			display: flex;
 			justify-content: space-between;
 
 			margin: 0;
 			border: 0;
-			padding: 1vw;
+			padding: 0;
 		}
-		div.left
+			div.left
 			{
 				display: flex;
 				align-items: center;
 			}
-			div.left img
+				div.left img
 				{
 					max-width: 3vw;
 					margin: 0;
 					border: 0;
 				}
-		div.right
+			div.right
 			{
 				display: flex;
 				justify-content: end;
@@ -72,17 +72,17 @@ div.fix:hover
 				border: 0;
 				padding: 1vw;
 			}
-			div
+				div
 				{
 					padding: 0 2vw;
 				}
-				div.org
+					div.org
 					{
 						position: relative;
 						display: inline-block;
 						padding: 0 2vw;
 					}
-					div.org-drpdwn
+						div.org-drpdwn
 						{
 							display: none;
 							position: absolute;
@@ -90,25 +90,33 @@ div.fix:hover
 							background-color: #414141;
 							/* Added negative margin to compensate div.org padding */
 							margin: 0 0 0 -1vw;
-							padding: 1vw;
+							padding: 1.2vw 1vw 1vw 1vw;
 
 							width: 15vw;
 						}
-						div.org-drpdwn a
+							div.org-drpdwn a
 							{
 								max-width: 100%;
 							}
-							div.comp1, div.comp2, div.comp3
+								div.comp1, div.comp2, div.comp3
 								{
 									padding: 1vw 0;
 								}
-						/* HOVERED WHEN */
-						div.org:hover div.org-drpdwn
+								/* Company Tabs Padding */
+								div.org-drpdwn div.comp1, div.comp2, div.comp3
 								{
-									display: block;
+									padding: 0.2vw 0;
 								}
-	
-	header section
+							/* HOVERED WHEN */
+							div.org:hover div.org-drpdwn
+							{
+								display: block;
+								
+								box-shadow: 0 0.3vw .5vw 0 rgba(51, 51, 51, 0.5);
+								/* Only Appearing Transition */
+								transition: box-shadow, 0.6s;
+							}
+		header section
 		{
 			margin: 0 auto;
 			border: 0;
@@ -116,19 +124,19 @@ div.fix:hover
 
 			text-align: center;
 		}
-		header section.wefo-logo
+			header section.wefo-logo
 			{
 				padding: 6vw 0 0;
 			}
-			header section.wefo-logo img
+				header section.wefo-logo img
 				{
 					max-width: 30vw;
 				}
-		header section.header-wefo
+			header section.header-wefo
 			{
 				font-size: 2vw;
 			}
-			header section.header-wefo h1
+				header section.header-wefo h1
 				{
 					margin: 0;
 				}
