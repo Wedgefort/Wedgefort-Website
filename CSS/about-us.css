@@ -65,6 +65,7 @@ body
 		{
 			margin: 0 1vw 0 0;
 
-			font-family: 'Fira code', 'Courier New', Courier, monospace;
-			font-size: 1.2vw;
+			font-size: 1vw;
+			font-family: 'Fira Code','Courier New', Courier, monospace;
+			line-height: 1.2vw;
 		}

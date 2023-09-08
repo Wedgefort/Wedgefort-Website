@@ -18,18 +18,33 @@ body
 	margin: 0 auto;
 	border: 0;
 	padding: 0;
+
+/* HIDING SCROLL BARS */
+	overflow-y: scroll;
+}
+/* HIDING SCROLLBAR FOR CHROME, BRAVE, SAFARI, OPERA */
+body::-webkit-scrollbar
+{
+	display: none;
+}
+/* HIDING SCROLLBAR FOR OTHER BROWSERS */
+body{
+/* HIDING SCROLLBAR FOR INTERNET EXPLORER & MICROSOFT EDGE */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
+/* #################### */
 /* NAVIGATION BAR EDITS */
 	div.fix
 	{
 		position: fixed;
 		background-color: #414141;
-		
+
 		font-size: 0.8vw;
-		
+
 		width: 100%;
-		
+
 		margin: 0;
 		border: 0;
 		padding: 0;
@@ -43,7 +58,7 @@ body
 	}
 	div.fix:hover
 	{
-		box-shadow: 0 0.1vw 0.1vw 0.2vw #333333;
+		box-shadow: 0 0.1vw 0.6vw 0.2vw #333333;
 	}
 		nav.nav
 		{
@@ -80,59 +95,85 @@ body
 				display: flex;
 				justify-content: end;
 				align-items: center;
-				
+
 				margin: 0;
 				border: 0;
-				padding: 0;
+				padding: 0 1vw 0 0;
 			}
-				div.right
+				div.right div
 				{
-					padding: 0 1vw 0 0;
+					margin: 0;
+					border: 0;
+					padding: 0 0.5vw;
 				}
-					div.right div
+					div.cont1
 					{
 						margin: 0;
 						border: 0;
-						padding: 0 1vw;
+						padding: 0;
 					}
-						div.org
+					div.cont2
+					{
+						position: relative;
+						display: inline-block;
+					}
+						div.cont2 div.org
 						{
-							position: relative;
-							display: inline-block;
+							margin: 0;
+							border: 0;
+							padding: 0;
 						}
-							div.org div.org-drpdwn
+						div.cont2 div.drp
+						{
+							display: none;
+							position: absolute;
+
+							background-color: #414141;
+							/* ADDED NEGATIVE MARGIN TO COMPENSATE div.org PADDING */
+							margin: 0 0 0 -0.5vw;
+							padding: 0.5vw 1vw;
+
+							width: 10vw;
+						}
+							/* COMPANY TABS PADDING */
+							div.drp div.comp1, div.drp div.comp2, div.drp div.comp3
 							{
-								display: none;
-								position: absolute;
-
-								background-color: #414141;
-								/* ADDED NEGATIVE MARGIN TO COMPENSATE div.org PADDING */
-								margin: 0 0 0 -0.8vw;
-								padding: 0.6vw 0.8vw 1vw;
-
-								width: 10vw;
+								padding: 0.2vw 0;
 							}
-								/* COMPANY TABS PADDING */
-								div.org-drpdwn div.comp1, div.org-drpdwn div.comp2, div.org-drpdwn div.comp3
-								{
-									padding: 0.2vw 0;
-								}
-								/* HOVERED WHEN */
-								div.org:hover div.org-drpdwn
-								{
-									display: block;
-									
-									box-shadow: 0 0.3vw 0.4vw 0.1vw rgba(51, 51, 51, 0.5);
-									/* ONLY APPEARING TRANSITION */
-									transition-property: box-shadow;
-									transition-duration: 0.6s;
-									transition-timing-function: ease;
-									transition-delay: 0s;
-									/* EMD TRANSITION */
-								}
+							/* HOVERED WHEN */
+							div.cont2:hover div.drp
+							{
+								display: block;
+
+								box-shadow: 0 0.3vw 0.6vw 0.2vw rgba(51, 51, 51, 0.5);
+								/* ONLY APPEARING TRANSITION */
+								transition-property: box-shadow;
+								transition-duration: 0.6s;
+								transition-timing-function: ease;
+								transition-delay: 0s;
+								/* EMD TRANSITION */
+						}
+					div.cont3
+					{
+						margin: 0;
+						border: 0;
+						padding: 0;
+					}
+					div.cont4
+					{
+						margin: 0;
+						border: 0;
+						padding: 0;
+					}
+	header
+	{
+		margin: 0 auto;
+		border: 0;
+		padding: 1vw 0 0;
+	}
 		header section
 		{
-			margin: 0 auto;
+			margin: 0;
 			border: 0;
 			padding: 0;
 
@@ -140,17 +181,52 @@ body
 		}
 			header section.wefo-logo
 			{
-				padding: 1vw 0 0;
+				margin: 0;
+				border: 0;
+				padding: 0;
 			}
 				header section.wefo-logo img
 				{
 					max-width: 30vw;
+
+					margin: 0;
+					border: 0;
+					padding: 0;
 				}
 			header section.header-wefo
 			{
+				margin: 0;
+				border: 0;
+				padding: 0;
+
 				font-size: 2vw;
 			}
 				header section.header-wefo h1
 				{
 					margin: 0;
 				}
+	main
+	{
+		margin: 5vw;
+		border: 0;
+		padding: 0;
+
+	}
+		main section.about-us
+		{
+			margin: 0 auto;
+		}
+			main section.about-us h1
+			{
+				font-size: 2vw;
+			}
+			main section.about-us p
+			{
+				margin: 0 auto;
+				border: 0;
+				padding: 0;
+
+				font-size: 1.2vw;
+				font-family: 'Fira Code','Courier New', Courier, monospace;
+				line-height: 1.5vw;
+			}
