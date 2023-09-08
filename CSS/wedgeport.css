@@ -26,7 +26,7 @@ body
 		position: fixed;
 		background-color: #414141;
 		
-		font-size: 1.2vw;
+		font-size: 0.8vw;
 		
 		width: 100%;
 		
@@ -34,13 +34,16 @@ body
 		border: 0;
 		padding: 0;
 
-	/* Shadow Animation Start */
-		transition: box-shadow, 0.6s;
+	/* SHADOW ANIMATION START */
+		transition-property: box-shadow;
+		transition-duration: 0.6s;
+		transition-timing-function: ease;
+		transition-delay: 0s;
+	/* SHADOW ANIMATION END */
 	}
-	/* Shadow Animation End */
 	div.fix:hover
 	{
-		box-shadow: 0 0.3vw .3vw 0.3vw #333333;
+		box-shadow: 0 0.1vw 0.1vw 0.2vw #333333;
 	}
 		nav.nav
 		{
@@ -55,12 +58,22 @@ body
 			{
 				display: flex;
 				align-items: center;
+
+				margin: 0;
+				border: 0;
+				padding: 0 0 0 1vw;
 			}
-				div.left img
+				div.left div.ll-img img
 				{
-					max-width: 3vw;
+					max-width: 1.6vw;
 					margin: 0;
 					border: 0;
+				}
+				div.left div.ll-txt a
+				{
+					margin: 0;
+					border: 0;
+					padding: 0;
 				}
 			div.right
 			{
@@ -70,52 +83,53 @@ body
 				
 				margin: 0;
 				border: 0;
-				padding: 1vw;
+				padding: 0;
 			}
-				div
+				div.right
 				{
-					padding: 0 2vw;
+					padding: 0 1vw 0 0;
 				}
-					div.org
+					div.right div
 					{
-						position: relative;
-						display: inline-block;
-						padding: 0 2vw;
+						margin: 0;
+						border: 0;
+						padding: 0 1vw;
 					}
-						div.org-drpdwn
+						div.org
 						{
-							display: none;
-							position: absolute;
-
-							background-color: #414141;
-							/* Added negative margin to compensate div.org padding */
-							margin: 0 0 0 -1vw;
-							padding: 1.2vw 1vw 1vw 1vw;
-
-							width: 15vw;
+							position: relative;
+							display: inline-block;
 						}
-							div.org-drpdwn a
+							div.org div.org-drpdwn
 							{
-								max-width: 100%;
+								display: none;
+								position: absolute;
+
+								background-color: #414141;
+								/* ADDED NEGATIVE MARGIN TO COMPENSATE div.org PADDING */
+								margin: 0 0 0 -0.8vw;
+								padding: 0.6vw 0.8vw 1vw;
+
+								width: 10vw;
 							}
-								div.comp1, div.comp2, div.comp3
-								{
-									padding: 1vw 0;
-								}
-								/* Company Tabs Padding */
-								div.org-drpdwn div.comp1, div.comp2, div.comp3
+								/* COMPANY TABS PADDING */
+								div.org-drpdwn div.comp1, div.org-drpdwn div.comp2, div.org-drpdwn div.comp3
 								{
 									padding: 0.2vw 0;
 								}
-							/* HOVERED WHEN */
-							div.org:hover div.org-drpdwn
-							{
-								display: block;
-								
-								box-shadow: 0 0.3vw .5vw 0 rgba(51, 51, 51, 0.5);
-								/* Only Appearing Transition */
-								transition: box-shadow, 0.6s;
-							}
+								/* HOVERED WHEN */
+								div.org:hover div.org-drpdwn
+								{
+									display: block;
+									
+									box-shadow: 0 0.3vw 0.4vw 0.1vw rgba(51, 51, 51, 0.5);
+									/* ONLY APPEARING TRANSITION */
+									transition-property: box-shadow;
+									transition-duration: 0.6s;
+									transition-timing-function: ease;
+									transition-delay: 0s;
+									/* EMD TRANSITION */
+								}
 		header section
 		{
 			margin: 0 auto;
@@ -126,7 +140,7 @@ body
 		}
 			header section.wefo-logo
 			{
-				padding: 6vw 0 0;
+				padding: 1vw 0 0;
 			}
 				header section.wefo-logo img
 				{
