@@ -1,0 +1,21 @@
+/* PRIMARY BODY */
+html
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+	font-family: 'Press Start 2P', monospace;
+	background-color: #383838;
+	color: #cfcfcf;
+
+    /* FIXED PAGE SIZE A4 */
+    max-width: 2480px;
+    max-height: 3508px
+}
+
+iframe
+{
+    width: 100%;
+    height: 3508px;
+}
