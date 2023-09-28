@@ -104,8 +104,19 @@ body{
 				{
 					margin: 0;
 					border: 0;
-					padding: 0 0.5vw;
+					padding: 0 0.8vw;
 				}
+					div.cont0
+					{
+						margin: 0;
+						border: 0;
+						padding: 0;
+					}
+						/* ADDING WORD SPACING BY DEFAULT */
+						div.cont0 a
+						{
+							word-spacing: -0.5vw;
+						}
 					div.cont1
 					{
 						margin: 0;

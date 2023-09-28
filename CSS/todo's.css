@@ -1,0 +1,129 @@
+html
+{
+	font-family: 'JetBrains Mono', monospace;
+	background-color: #5e548e;
+	color: #e0b1cb;
+
+/* BUILDING MOBILE FRIENDLY PARAMETERS */
+
+}
+
+body
+{
+	margin: 0 auto;
+	border: 0;
+	padding: 0;
+
+/* HIDING SCROLL BAR */
+	overflow-y: scroll;
+}
+/* HIDING SCROLLBAR FOR CHROME, BRAVE, SAFARI, OPERA */
+body::-webkit-scrollbar
+{
+	display: none;
+}
+/* HIDING SCROLLBAR FOR OTHER BROWSERS */
+body{
+/* HIDING SCROLLBAR FOR INTERNET EXPLORER & MICROSOFT EDGE */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+div
+{
+	display: flex;
+	justify-content: center;
+
+	margin: 0 auto;
+	border: 0;
+	padding: 0;
+}
+	img
+	{
+		width: 5vw;
+		height: 5vw;
+	}
+	h1
+	{
+		margin: auto 0;
+		border: 0;
+		padding: 0;
+
+		text-align: center;
+		vertical-align: middle;
+
+		font-size: 2vw;
+		font-weight: bold;
+	}
+p
+{
+	margin: 0 auto;
+	border: 0;
+	padding: 0 0 1vw;
+	
+	text-align: center;
+	
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+/* TABLE CSS CONSTRUCTION */
+table
+{
+	display: block;
+	width: 80vw;
+
+	margin: 1vw auto;
+	border: solid 0.5vw #e0b1cb;
+	border-collapse: collapse;
+	padding: 1vw;
+
+	text-indent: initial;
+}
+	tbody
+	{
+		margin: 0;
+		border: 0;
+		padding: 1vw;
+	}
+		th
+		{
+			width: 20vw;
+
+			margin: 0;
+			border: solid 0.2vw #e0b1cb;
+			padding: 1vw;
+
+			font-size: 1.5vw;
+			font-weight: bold;
+		}
+		td
+		{
+			width: 20vw;
+
+			margin: 0;
+			border: solid 0.2vw #e0b1cb;
+			padding: 1vw;
+
+			font-size: 1vw;
+			font-weight: normal;
+
+			vertical-align: text-top;
+		}
+			.center
+			{
+				text-align: center;
+				vertical-align: middle;
+			}
+		ul
+		{
+			padding: 0 0 0 1vw;
+		}
+			li
+			{
+				margin: 1vw 0;
+			}
+
+.blank
+{
+	padding: 4vw;
+}
