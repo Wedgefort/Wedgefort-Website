@@ -1,4 +1,44 @@
-body
+html
 {
-	font-family: Jetbrains Mono;
+	font-family: JetBrains mono, monospace;
+}
+
+.table
+{
+	margin: 0 auto;
+	border: 5px double black;
+	max-width: 900px;
+}
+.row
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 1fr;
+	
+	text-align: center;
+}
+	.cellh
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border: 1px solid black;
+		padding: 10px;
+
+		font-weight: 900;
+	}
+	.cellb
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border: 1px solid black;
+		padding: 10px;
+	}
+
+/* Text Alignments */
+.lt
+{
+	text-align: left;
 }
